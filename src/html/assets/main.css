@@ -1,0 +1,15 @@
+body {
+  background-color: black;
+  margin: 0px;
+}
+
+#main {
+  width: 80%;
+  background-color: #ddd;
+  margin: 0 auto;
+}
+
+#datenightInHeader {
+  font-family: cursive;
+  color: white;
+}

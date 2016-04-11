@@ -15,6 +15,7 @@ RUN ln -s /etc/apache2/sites-available/datenight.conf /etc/apache2/sites-enabled
 
 # Configure apache
 RUN a2enmod rewrite
+RUN a2enmod php5
 RUN a2ensite datenight
 RUN chown -R www-data:www-data /var/www
 ENV APACHE_RUN_USER www-data
