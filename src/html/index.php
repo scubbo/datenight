@@ -11,6 +11,27 @@
   include '../php/header.php';
 ?>
 <p>Hello world!</p>
+<form>
+  <input type='text' id='usernameInput'></input>
+  <input type='password' id='passwordInput'></input>
+  <input type='button' id='submitButton' value='Enter'></input>
+</form>
 </div>
+
+<script type='text/javascript'>
+  $('#submitButton').click(function() {
+    $.post(
+      '/cgi-bin/register.py',
+      {
+        'username':$('#usernameInput').val(),
+        'password':$('#passwordInput').val()
+      },
+      function(data) {
+        console.log(data);
+      }
+    )
+  });
+</script>
+
 </body>
 </html>
