@@ -10,26 +10,46 @@
 <?php
   include '../php/header.php';
 ?>
-<p>Hello world!</p>
+<p>Login</p>
 <form>
-  <input type='text' id='usernameInput'></input>
-  <input type='password' id='passwordInput'></input>
-  <input type='button' id='submitButton' value='Enter'></input>
+  <input type='text' id='usernameLoginInput'></input>
+  <input type='password' id='passwordLoginInput'></input>
+  <input type='button' id='loginButton' value='Login'></input>
 </form>
+<input type='button' id='logoutButton' value='Logout'></input>
 </div>
 
 <script type='text/javascript'>
-  $('#submitButton').click(function() {
-    $.post(
-      '/cgi-bin/register.py',
-      {
-        'username':$('#usernameInput').val(),
-        'password':$('#passwordInput').val()
-      },
-      function(data) {
-        console.log(data);
-      }
-    )
+  $(document).ready(function() {
+  
+    $('#loginButton').click(function() {
+      $.post(
+        '/cgi-bin/login.py',
+        {
+          'username':$('#usernameLoginInput').val(),
+          'password':$('#passwordLoginInput').val()
+        },
+        function(data) {
+          if (data['status'] == 'SUCCESS') {
+            window.location.pathname = '';
+            window.location.reload();
+          } else {
+            window.alert('Your username or password was wrong');
+          }
+        }
+      );
+    });
+  
+    $('#logoutButton').click(function() {
+      $.post(
+        '/cgi-bin/logout.py',
+        {},
+        function(data) {
+          window.location.pathname = '';
+          window.location.reload();
+        }
+      );
+    });
   });
 </script>
 
