@@ -50,7 +50,6 @@ EOT;
   });
 </script>
 EOT;
-  echo "sessionId is " . $_COOKIE['sessionId'];
 }
 ?>
 </div>
