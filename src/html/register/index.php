@@ -13,8 +13,10 @@
   } else {
     echo <<< EOT
 <form>
-  <input type='text' id='usernameInput'></input>
-  <input type='password' id='passwordInput'></input>
+  <label for='usernameInput'>Username:</label><input type='text' id='usernameInput'></input>
+  <label for='passwordInput'>Password:</label><input type='password' id='passwordInput'></input>
+  <label for='firstNameInput'>First Name:</label><input type='text' id='firstNameInput'></input>
+  <label for='lastNameInput'>Last Name:</label><input type='text' id='lastNameInput'></input>
   <input type='button' id='submitButton' value='Register'></input>
 </form>
 
@@ -25,7 +27,9 @@
         '/cgi-bin/register.py',
         {
           'username':$('#usernameInput').val(),
-          'password':$('#passwordInput').val()
+          'password':$('#passwordInput').val(),
+          'firstName':$('#firstNameInput').val(),
+          'lastName':$('#lastNameInput').val()
         },
         function(data) {
           if (data.status == 'SUCCESS') {
