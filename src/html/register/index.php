@@ -28,7 +28,15 @@
           'password':$('#passwordInput').val()
         },
         function(data) {
-          console.log(data);
+          if (data.status == 'SUCCESS') {
+            window.location='/';
+          } else {
+            if (data.failure_code == 'DUPLICATE_USERNAME') {
+              alert('That username has already been taken. Try another one');
+            } else {
+              alert('An unknown error occurred');
+            }
+          }
         }
       )
     });

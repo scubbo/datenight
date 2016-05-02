@@ -41,11 +41,10 @@ EOT;
     $('#logoutButton').click(function() {
       $.post(
         '/cgi-bin/logout.py',
-        {},
         function(data) {
-          window.location.pathname = '';
-          window.location.reload();
-        }
+          window.location.reload(true);
+        },
+        'text'
       );
     });
   });
