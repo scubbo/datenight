@@ -12,6 +12,10 @@ username = form['username'].value
 password = form['password'].value
 firstName = form['firstName'].value
 lastName = form['lastName'].value
+likesDancing = form['likesDancing'].value == 'true'
+likesDrinking = form['likesDrinking'].value == 'true'
+likesMusicals = form['likesMusicals'].value == 'true'
+
 pwHash = sha256_crypt.encrypt(password)
 sessionId = str(uuid4())
 expiryDate = datetime.now() + timedelta(0,0,0,0,5,0,0)
@@ -27,6 +31,9 @@ else:
   
   sessionsTable = r.Table('Sessions')
   sessionsTable.put_item(Item={'id':sessionId, 'username':username, 'active':True, 'expires':str(expiryDate)})
+
+  interestsTable = r.Table('Interests')
+  interestsTable.put_item(Item={'username':username, 'dancing':likesDancing, 'drinking':likesDrinking, 'musicals':likesMusicals})
   
   print('Set-Cookie: sessionId=' + sessionId + '; Path=/; Expires=' + expiryDate.strftime('%a, %d-%b-%Y %T GMT'))
   print('Content-Type: application/json')

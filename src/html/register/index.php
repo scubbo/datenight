@@ -13,10 +13,18 @@
   } else {
     echo <<< EOT
 <form>
+  <h3>Login details</h3>
   <label for='usernameInput'>Username:</label><input type='text' id='usernameInput'></input>
   <label for='passwordInput'>Password:</label><input type='password' id='passwordInput'></input>
+  <h3>Person details</h3>
   <label for='firstNameInput'>First Name:</label><input type='text' id='firstNameInput'></input>
   <label for='lastNameInput'>Last Name:</label><input type='text' id='lastNameInput'></input>
+  <h3>Interests</h3>
+  <p>Check all the below that you are interested in:</p>
+  <input type='checkbox' name='likesDancing' id='likesDancingCheckBox'>Dancing</input>
+  <input type='checkbox' name='likesDrinking' id='likesDrinkingCheckBox'>Drinking</input>
+  <input type='checkbox' name='likesMusicals' id='likesMusicalsCheckBox'>Musicals</input>
+  
   <input type='button' id='submitButton' value='Register'></input>
 </form>
 
@@ -29,7 +37,10 @@
           'username':$('#usernameInput').val(),
           'password':$('#passwordInput').val(),
           'firstName':$('#firstNameInput').val(),
-          'lastName':$('#lastNameInput').val()
+          'lastName':$('#lastNameInput').val(),
+          'likesDancing':$('#likesDancingCheckBox').is(':checked'),
+          'likesDrinking':$('#likesDrinkingCheckBox').is(':checked'),
+          'likesMusicals':$('#likesMusicalsCheckBox').is(':checked')
         },
         function(data) {
           if (data.status == 'SUCCESS') {
