@@ -26,7 +26,10 @@ $.post(
 );
 </script>
 EOT;
-echo "<p>Hello <span id='firstNameSpan'></span>, you are logged in!</p>";
+echo <<< EOT
+<p>Hello <span id='firstNameSpan'></span>, you are logged in!</p>
+<img src='http://tgj.roccamedia.netdna-cdn.com/wp-content/uploads/2015/12/london1-1200x510.jpg'>
+EOT;
 } else {
 echo <<< EOT
 <p>This is the front page of Datenight!</p>

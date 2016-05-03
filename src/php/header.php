@@ -1,4 +1,4 @@
-<div id="header">
+<div id="header" class="clearfix">
 <div id="leftOfHeader"><span id="datenightInHeader">Datenight</span></div>
 <div id="rightOfHeader">
 <?php

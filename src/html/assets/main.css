@@ -3,13 +3,33 @@ body {
   margin: 0px;
 }
 
+img {
+  width: 100%;
+}
+
 #main {
   width: 80%;
   background-color: #ddd;
   margin: 0 auto;
+  height: 100%;
 }
 
 #datenightInHeader {
   font-family: cursive;
   color: white;
 }
+
+.rightOfHeader {
+  float: right;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
