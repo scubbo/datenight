@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-image: url('/assets/bg.gif');
   margin: 0px;
 }
 
@@ -9,27 +9,11 @@ img {
 
 #main {
   width: 80%;
-  background-color: #ddd;
   margin: 0 auto;
   height: 100%;
 }
 
-#datenightInHeader {
-  font-family: cursive;
-  color: white;
+#body {
+  background-color: rgba(256,256,256,0.7);
+  height: 100%;
 }
-
-.rightOfHeader {
-  float: right;
-}
-
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-    }
-* html .clearfix             { zoom: 1; } /* IE6 */
-*:first-child+html .clearfix { zoom: 1; } /* IE7 */

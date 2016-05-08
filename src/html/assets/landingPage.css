@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'custom-cursive';
+  src: url('/assets/allura/allura-regular.ttf');
+}
+
+#centred {
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#mainDatenightText {
+  display: block;
+  width: 360px;
+  margin: 0 auto;
+  font-size: 100px;
+  font-family: 'custom-cursive';
+  text-shadow: 0 0 15px #00B;
+}
+
+#mainDatenightText:hover {
+  text-shadow: 0 0 30px #00F;
+}
+
+#subheadingText {
+  display: block;
+  width: 351px;
+  margin: 10px auto 0px;
+  padding-left: 222px;
+  font-size: 45px;
+  font-family: 'custom-cursive';
+  text-shadow: 0 0 8px #00B;
+}
+
+#subheadingText:hover {
+  text-shadow: 0 0 15px #00F;
+}
+
+.neonGlow {
+  color: #000;
+  -webkit-transition: text-shadow 0.5s;
+  transition: text-shadow 0.5s;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
