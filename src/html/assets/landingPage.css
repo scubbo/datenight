@@ -16,11 +16,15 @@
   margin: 0 auto;
   font-size: 100px;
   font-family: 'custom-cursive';
-  text-shadow: 0 0 15px #00B;
+  text-shadow: 0 0 15px #B00;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #mainDatenightText:hover {
-  text-shadow: 0 0 30px #00F;
+  text-shadow: 0 0 30px #F00;
 }
 
 #subheadingText {
@@ -30,20 +34,28 @@
   padding-left: 222px;
   font-size: 45px;
   font-family: 'custom-cursive';
-  text-shadow: 0 0 8px #00B;
+  text-shadow: 0 0 8px #B00;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
 }
 
 #subheadingText:hover {
-  text-shadow: 0 0 15px #00F;
+  text-shadow: 0 0 15px #F00;
 }
 
 .neonGlow {
-  color: #000;
-  -webkit-transition: text-shadow 0.5s;
-  transition: text-shadow 0.5s;
+  color: #300;
+  -webkit-transition: text-shadow 0.3s;
+  transition: text-shadow 0.3s;
   cursor: pointer;
 }
 
 a {
   text-decoration: none;
+}
+
+body {
+  background-image: url('/assets/bg.gif');
+  margin: 0px;
 }
