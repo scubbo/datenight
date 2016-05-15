@@ -4,7 +4,7 @@
 </head>
 
 <body>
-<a href='register'><span id='mainDatenightText' class='neonGlow'>Datenight</span></a>
+<a href='register'><span id='mainDatenightText' class='neonGlow'>DateNight</span></a>
 <a href='register'><span id='subheadingText' class='neonGlow'>Plan for the Unknown...</span></a>
 
 </body>
