@@ -14,7 +14,7 @@
         '/cgi-bin/register.py',
         {
           'data': $('form').serialize()
-        }
+        })
     });
   });
 </script>
