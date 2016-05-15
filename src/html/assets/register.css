@@ -1,0 +1,15 @@
+.questionContainerDiv {
+  display:none;
+}
+
+#div1 {
+  display: block;
+}
+
+#div1 h1 {
+  display:inline-block; // To let the popup be in the right place
+}
+
+#popup {
+  display:none;
+}
