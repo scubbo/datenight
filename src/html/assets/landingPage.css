@@ -11,7 +11,7 @@
 }
 
 #mainDatenightText {
-  display: block;
+/*  display: block; */
   width: 360px;
   margin: 0 auto;
   font-size: 100px;
@@ -28,7 +28,7 @@
 }
 
 #subheadingText {
-  display: block;
+  /*display: block; */
   width: 351px;
   margin: 10px auto 0px;
   padding-left: 222px;
@@ -45,6 +45,7 @@
 }
 
 .neonGlow {
+  display: none;
   color: #300;
   -webkit-transition: text-shadow 0.3s;
   transition: text-shadow 0.3s;
