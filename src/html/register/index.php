@@ -40,7 +40,7 @@
 </div>
 
 <div id='div2' class='questionContainerDiv'>
-  <h1>Tell us what you would like to get out of your Date Night...</h1>
+  <h1>Tell us what you would like to get out of your DateNight...</h1>
   <div id='questions2' class='questionDiv'>
     <span>More traditional or more adventurous?</span>
     <label for="traditional">Traditional</label><input type="radio" name="traditionalAdventurous" value="traditional" id="traditional" />
@@ -61,12 +61,11 @@
     <label for="cocktails">Cocktail Connoisseur</label><input type="checkbox" name="interests" value="cocktails" id="cocktails" />
     <label for="food">Foody</label><input type="checkbox" name="interests" value="food" id="food" />
     <label for="film">Film Buff</label><input type="checkbox" name="interests" value="film" id="film" />
-    <label for="thrills">Thrill Seeker</label><input type="checkbox" name="interests" value="thrills" id="thrills" />
     <label for="physical">Physically Active</label><input type="checkbox" name="interests" value="physical" id="physical" />
     <label for="adrenaline">Adrenaline Junkie</label><input type="checkbox" name="interests" value="adrenaline" id="adrenaline" />
     <label for="gaming">Gaming Enthusiast</label><input type="checkbox" name="interests" value="gaming" id="gaming" />
     <label for="raving">Raver</label><input type="checkbox" name="interests" value="raving" id="raving" />
-    <label for="gigs">Gig-Goer</label><input type="checkbox" name="interests" value="gigs" id="gigs" />
+    <label for="gigs">Gigger</label><input type="checkbox" name="interests" value="gigs" id="gigs" />
     <label for="art">Art Gallery Wanderer</label><input type="checkbox" name="interests" value="art" id="art" />
     <label for="dance">Dancing Queen</label><input type="checkbox" name="interests" value="dance" id="dance" />
     <label for="cooking">Culinary Wizard</label><input type="checkbox" name="interests" value="cooking" id="cooking" />
