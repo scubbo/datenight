@@ -8,10 +8,6 @@
 
 <body>
 
-<script type='text/javascript'>
-  $(document).ready(function() {
-  });
-</script>
 <div id="main">
 <div id="body">
 <form>
