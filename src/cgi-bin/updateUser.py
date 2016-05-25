@@ -26,8 +26,8 @@ def main():
   r = resource('dynamodb')
   
   booleans = ['children']
-  radios = ['ageRange','traditionalAdventurous','closeOrFar', 'sillySerious','adventurousTraditional','braveCautious','activePassive','laidBackActive', 'sociablePrivate']
-  strings = ['whoWith', 'howLongTogether', 'hobbies','religion','occasion','postcode','allergies','dietary','alcohol','fears','dislikes','lastDates']
+  radios = ['ageRange','typicalDate','traditionalAdventurous','closeOrFar','reason','sillySerious','braveCautious','laidBackActive', 'sociablePrivate']
+  strings = ['username','whoWith','howLongTogether','howOften','otherTypicalText','numberOfChildren','hobbies','religion','occasion','postcode','allergies','dietary','alcohol','fears','dislikes']
   
   usersTable = r.Table('Users')
   updateStrings = []
