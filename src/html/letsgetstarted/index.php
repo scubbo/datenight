@@ -4,6 +4,8 @@
   include '../../php/headImport.php';
 ?>
 <link rel='stylesheet' type='text/css' href='/assets/letsGetStarted.css' />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,7 +22,7 @@
 <div id="infoDiv">
   <div id="dateDiv">
     <h2>When would you like to go?</h2>
-    <input type="date" name="date" />
+    <input type="text" name="date" />
   </div>
 
   <div id="howLongDiv">
@@ -31,7 +33,8 @@
 
   <div id="budgetDiv">
     <h2>What is your budget for both of you? (Not including DateNight fee)</h2>
-    <input name="budget"></input>
+    <span id="budgetAmountDisplay">50</span>
+    <div id="budgetSliderDiv"></div>
     <input type="button" value="Next" id="next"></input>
   </div>
 </div>
@@ -39,10 +42,22 @@
 
 <script type="text/javascript">
   $(document).ready(function() {
+
+    $('input[name="date"]').datepicker();
+    $('#budgetSliderDiv').slider({
+      value: 50,
+      min: 50,
+      max: 500,
+      step: 50,
+      slide: function(event, ui) {
+        $('#budgetAmountDisplay').text(ui.value);
+      }
+    });
+
     $('#next').click(function() {
       $.post('/cgi-bin/createUser.py',
         {
-          'data': $('#infoForm').serialize()
+          'data': $('#infoForm').serialize() + '&budget=' + $('#budgetSliderDiv').slider('value')
         },
         function(data) {
           window.location.assign('/interests');
