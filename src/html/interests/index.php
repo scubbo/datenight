@@ -10,6 +10,9 @@
 
 <div id="main">
 <div id="body">
+<?php
+if(isset($_COOKIE['userId'])) {
+echo <<<EOF
 <form>
 <div id='div1' class='questionContainerDiv currentDiv'>
   <h1>Tell us about you...</h1>
@@ -141,7 +144,7 @@
     $('#submitButton').click(function() {
       if (shouldContinue($(this))) {
         $.post(
-          '/cgi-bin/register.py',
+          '/cgi-bin/updateUser.py',
           {
             'data': $('form').serialize()
           })
@@ -189,6 +192,11 @@
   }
 
 </script>
+EOF;
+} else {
+  echo "<h1>Something has gone wrong!</h1><h2>Please report this to scubbojj+datenight@gmail.com</h2><h3>Thanks!</h3>";
+}
+?>
 
 </div>
 </div>

@@ -1,0 +1,15 @@
+#body {
+  bakground-color: rgba(256, 256, 256, 0.7);
+  height: 100%;
+  padding: 20px;
+}
+
+#aboutDateNightDiv {
+  width: 500px;
+}
+
+#infoDiv > div {
+  float: left;
+  width: 250px;
+  margin-right: 20px;
+}
