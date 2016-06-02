@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'custom-cursive';
+  src: url('/assets/allura/allura-regular.ttf');
+}
+
+p {
+  color: #fff;
+  text-shadow:
+    1px 1px 0px #000,
+    -1px 1px 0px #000,
+    1px -1px 0px #000,
+    -1px -1px 0px #000,
+    0px 0px 15px #B00;
+  font-family: 'custom-cursive';
+  font-size: 48px;
+  margin: 50px auto 0;
+  width: 485px;
+  text-align: center;
+}

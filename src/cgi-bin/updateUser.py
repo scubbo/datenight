@@ -75,6 +75,8 @@ def main():
     }
   )
 
+  print(dumps({'status':'SUCCESS'}))
+
 if __name__ == '__main__':
   main()
 

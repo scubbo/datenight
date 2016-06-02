@@ -158,11 +158,15 @@ echo <<<EOF
 
     $('#submitButton').click(function() {
       if (shouldContinue($(this))) {
-        $.post(
-          '/cgi-bin/updateUser.py',
-          {
-            'data': $('form').serialize()
-          })
+
+        $.ajax({
+          type: 'POST',
+          url: '/cgi-bin/updateUser.py',
+          data: $('form').serialize(),
+          success: window.location.assign('/alldone'),
+          dataType: 'json'
+        });
+
       }
     });
 
