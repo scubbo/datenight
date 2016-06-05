@@ -1,3 +1,7 @@
+p, h1, h2, label {
+  color: #f5f5f5;
+}
+
 body {
   background-image: url('/assets/bg.gif');
   margin: 0px;
@@ -7,13 +11,21 @@ img {
   width: 100%;
 }
 
-#main {
-  width: 80%;
-  margin: 0 auto;
-  height: 100%;
+input {
+  color: #000;
 }
 
 #body {
-  background-color: rgba(256,256,256,0.7);
   height: 100%;
+  padding: 20px;
+}
+
+#main {
+  width: 80%;
+  padding: 0px 128px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bb0000+0,bb0000+100&0+0,0.9+10,0.9+90,0+100 */
+background: -moz-linear-gradient(left,  rgba(187,0,0,0) 0%, rgba(187,0,0,0.9) 10%, rgba(187,0,0,0.9) 90%, rgba(187,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(187,0,0,0) 0%,rgba(187,0,0,0.9) 10%,rgba(187,0,0,0.9) 90%,rgba(187,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(187,0,0,0) 0%,rgba(187,0,0,0.9) 10%,rgba(187,0,0,0.9) 90%,rgba(187,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bb0000', endColorstr='#00bb0000',GradientType=1 ); /* IE6-9 */
 }

@@ -1,15 +1,23 @@
 #body {
-  bakground-color: rgba(256, 256, 256, 0.7);
-  height: 100%;
   padding: 20px;
 }
 
-#aboutDateNightDiv {
-  width: 500px;
+#infoDiv > div {
+  width: 33%;
 }
 
-#infoDiv > div {
+#dateDiv {
   float: left;
-  width: 250px;
-  margin-right: 20px;
+}
+
+#howLongDiv {
+  display: inline-block;
+}
+
+#budgetDiv {
+  float: right;
+}
+
+span#budgetAmountDisplay {
+  color: #f5f5f5;
 }

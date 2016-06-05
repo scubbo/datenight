@@ -29,7 +29,7 @@ def main():
   
   booleans = ['children']
   radios = ['ageRange','typicalDate','traditionalAdventurous','closeOrFar','reason','sillySerious','braveCautious','laidBackActive', 'sociablePrivate']
-  strings = ['username','whoWith','howLongTogether','howOften','otherTypicalText','numberOfChildren','hobbies','religion','occasion','postcode','allergies','dietary','alcohol','fears','dislikes']
+  strings = ['username','email','whoWith','howLongTogether','howOften','otherTypicalText','numberOfChildren','hobbies','religion','occasion','postcode','allergies','dietary','alcohol','fears','dislikes']
   
   usersTable = r.Table('Users')
   updateStrings = []

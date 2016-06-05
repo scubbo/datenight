@@ -13,9 +13,8 @@
 <div id="main">
 <div id="body">
 <div id="aboutDateNightDiv">
-  <p>
-  Date Night is a unique experience where we plan a date for you and your partner that is a complete surprise for you both until the night. Tell us about yourselves and we base it around things we think you'll love. You will then be sent a dress code a few days before when we will also let you know either when your taxi will arrive at your door to take you to the first secret location or where to meet at your chosen time. Let us do the organising while you get ready, let the excitement build and plan for the unknown...
-  </p>
+  <p>Date Night is a unique experience where we plan a date for you and your partner that is a complete surprise for you both until the night. Tell us about yourselves and we base it around things we think you'll love.</p>
+  <p>You will then be sent a dress code a few days before, when we will also let you know either when your taxi will arrive at your door to take you to the first secret location, or where to meet at your chosen time. Let us do the organising while you get ready, let the excitement build and plan for the unknown...</p>
 </div>
 
 <form id="infoForm">

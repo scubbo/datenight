@@ -1,3 +1,16 @@
+span {
+  color: #f5f5f5;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  margin-left: 5px;
+}
+
 .questionContainerDiv {
   display:none;
 }
@@ -12,4 +25,8 @@
 
 #popup {
   display:none;
+}
+
+#questions3 > label {
+  display: inline-block;
 }
