@@ -60,7 +60,7 @@
           'data': $('#infoForm').serialize() + '&budget=' + $('#budgetSliderDiv').slider('value')
         },
         function(data) {
-          window.location.assign('/interests');
+          window.location.assign('/interests/');
         }
       )
     });

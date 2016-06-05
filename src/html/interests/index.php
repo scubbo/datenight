@@ -163,7 +163,7 @@ echo <<<EOF
           type: 'POST',
           url: '/cgi-bin/updateUser.py',
           data: $('form').serialize(),
-          success: window.location.assign('/alldone'),
+          success: window.location.assign('/alldone/'),
           dataType: 'json'
         });
 

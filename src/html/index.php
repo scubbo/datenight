@@ -7,8 +7,8 @@
 </head>
 
 <body>
-<a href='letsgetstarted'><span id='mainDatenightText' class='neonGlow'>DateNight</span></a>
-<a href='letsgetstarted'><span id='subheadingText' class='neonGlow'>Plan for the Unknown...</span></a>
+<a href='letsgetstarted/'><span id='mainDatenightText' class='neonGlow'>DateNight</span></a>
+<a href='letsgetstarted/'><span id='subheadingText' class='neonGlow'>Plan for the Unknown...</span></a>
 
 <script type='text/javascript'>
   $(document).ready(function() {
